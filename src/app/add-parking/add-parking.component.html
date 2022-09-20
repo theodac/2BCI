@@ -1,0 +1,15 @@
+<form (ngSubmit)="sendData()" action="">
+  <input type="text" [(ngModel)]="parking.name" name="name">
+  <input type="text" [(ngModel)]="parking.place" name="place">
+  <input type="text" [(ngModel)]="parking.creation_date" name="creation_date">
+  <input type="text" [(ngModel)]="parking.capacity" name="capacity">
+  <button type="submit">
+    Envoyer
+
+  </button>
+</form>
+<div *ngFor="let parking of listParking">
+  {{parking.name}} <br>
+</div>
+
+

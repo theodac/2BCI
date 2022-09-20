@@ -1,0 +1,14 @@
+<p>login works!</p>
+
+<p (click)="changeName()">{{user}}</p>
+{{number | exponential: 4}}
+{{date | date: 'fullDate'}}
+<form (ngSubmit)="submitForm()" action="">
+  <input type="text" [(ngModel)]="newUser.login" name="login" >
+  <input type="text" [(ngModel)]="newUser.password" name="password">
+  {{newUser.login}}
+
+  <button >
+    Envoyer
+  </button>
+</form>

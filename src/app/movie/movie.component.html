@@ -1,0 +1,12 @@
+<select name="" id="" (change)="onChange($event.target)">
+  <option value="" selected> Choisssez un filtre</option>
+  <option value="desc">Popularité croissante</option>
+  <option value="asc">Popularité décroissante</option>
+</select>
+
+<div *ngFor="let movie of listMovie">
+  <a routerLink="/detail/{{movie?.id}}">{{movie?.original_title}}</a>
+  {{movie?.popularity}}
+  {{movie?.release_date | date: 'M/d/yy'}}
+
+</div>

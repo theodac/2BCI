@@ -9,6 +9,8 @@ import { ExponentialPipe } from './exponential.pipe';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { AddParkingComponent } from './add-parking/add-parking.component';
+import { MovieComponent } from './movie/movie.component';
+import { DetailMovieComponent } from './movie/detail-movie/detail-movie.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AddParkingComponent } from './add-parking/add-parking.component';
     LoginComponent,
     RegisterComponent,
     ExponentialPipe,
-    AddParkingComponent
+    AddParkingComponent,
+    MovieComponent,
+    DetailMovieComponent
   ],
   imports: [
     BrowserModule,
